@@ -12,6 +12,14 @@
 #
 # import os
 # import sys
+import sys
+import os
+import shlex
+import sphinx_rtd_theme
+import recommonmark
+from recommonmark.parser import CommonMarkParser
+from recommonmark.transform import AutoStructify
+
 # sys.path.insert(0, os.path.abspath('.'))
 
 

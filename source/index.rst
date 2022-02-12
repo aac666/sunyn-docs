@@ -11,6 +11,7 @@ Welcome to ibtc-docs's documentation!
    :caption: Contents:
 
    早会纪要-20220209.md
+   Sphinx_+_Github_+_ReadTheDocs.md
 Indices and tables
 ==================
 

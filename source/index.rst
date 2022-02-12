@@ -10,8 +10,9 @@ Welcome to ibtc-docs's documentation!
    :maxdepth: 3
    :caption: Contents:
    
+   早会纪要-20220209.md
    about
-   早会纪要-20220209.md   
+
 Indices and tables
 ==================
 

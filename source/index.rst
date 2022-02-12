@@ -9,16 +9,10 @@
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
-<<<<<<< HEAD
 
     about
     2022年2月/index   
-=======
-   
-   about
-   2022年2月/index
-   
->>>>>>> 19a397e8c603522c5bb67ec40c04b50dadd7edb3
+
 Indices and tables
 ==================
 

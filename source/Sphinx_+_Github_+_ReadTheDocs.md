@@ -4,19 +4,14 @@
 
 1.执行命令：cd /usr/local切换到目录 /usr/local
 2.下载python3 tar包：wget http://cdn.npm.taobao.org/dist/python/3.6.5/Python-3.6.5.tgz
-
 3.执行命令：tar -zxvf Python-3.6.5.tgz  解压包
 4.执行命令：cd Python-3.6.5 进入到解压出的python目录内
 5.执行命令：./configure
-
 6.执行命令：make clean
 7.执行命令：make all
-
 8.执行命令：make install
-
 9.执行命令：ln -s /usr/local/bin/python3 /usr/bin/python3 设置python3软连接
 10.执行命令：python3 --version验证python版本
-
 
 ## 第2章 安装git环境
 
@@ -27,23 +22,27 @@ https://www.kernel.org/pub/software/scm/git/
 安装git
 yum install git
 查看yum源仓库Git信息
-
 yum info git
+
 ### 2.安装依赖库
 
 [root@wugenqiang ~]# yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel 
 [root@wugenqiang ~]# yum install gcc-c++ perl-ExtUtils-MakeMaker
+
 ### 3.如果原有的git版本过低，移除默认安装的旧版git
 
 [root@wugenqiang ~]# git --version    ## 查看自带的版本git version 1.8.3.1
 [root@wugenqiang ~]# yum remove git   ## 移除原来的版本
+
 ### 4.下载&安装
 
 [root@wugenqiang ~]# cd /usr/src
-  root@wugenqiang src]#wget https://www.kernel.org/pub/software/scm/git/git-2.18.0.tar.gz
+[root@wugenqiang src]#wget https://www.kernel.org/pub/software/scm/git/git-2.18.0.tar.gz
+  
 ### 5.解压
 
-[root@wugenqiang ~]# tar xf git-2.18.0.tar.gz 
+[root@wugenqiang ~]# tar xf git-2.18.0.tar.gz
+
 ### 6.配置编译安装
 
 [root@wugenqiang ~]# cd /usr/src
@@ -55,10 +54,12 @@ debug  git-2.18.0  kernels
 [root@wugenqiang git-2.18.0]# ./configure --prefix=/usr/git ##配置目录
 [root@wugenqiang git-2.18.0]# make profix=/usr/git
 [root@wugenqiang git-2.18.0]# make install
+
 ### 7.加入环境变量
 
 [root@wugenqiang ~]# echo "export PATH=$PATH:/usr/git/bin" >> /etc/profile
 [root@wugenqiang ~]# source /etc/profile
+
 ### 8.检查版本
 
 [root@wugenqiang ~]# git --version
@@ -126,23 +127,16 @@ html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 然后回到docs目录编译文件，注意此时java的虚拟环境一定要启动着
-
-
-
 执行后，变得HTML 页面保存在 build/html 目录。
 配置一个nginx，访问即可，我的nginx 文件在  /usr/local/nginx/conf/vhosts
-
 
 ## 第4章 配置github托管
 
 ### 4.1 本地生成SSH密钥
 
 $ ssh-keygen -t rsa -C “your email address”
-
 [root@wugenqiang ~]# ssh-keygen -t rsa -C "2422676183@qq.com"
 results：
-
-
 
 ### 4.2 添加密钥到GitHub
 
@@ -150,13 +144,9 @@ results：
 点击自己的头像->settings->SSH And GPG Keys->New SSH key
 将本地 id_rsa.pub 中的内容粘贴到 Key 文本框中，随意输入一个 title(不要有中文)，点击 Add Key 即可
 
-results：
-
-
 ### 4.3 本地测试验证
 
 [root@wugenqiang ~]# ssh git@github.com
-
 表明验证成功
 4.4 git常用命令参考
 git remote -v/--verbose：显示出详细的url地址名和对应的别名.
@@ -173,6 +163,7 @@ git checkout <branch-name>：切换到指定分支。
 git log：查看提交记录（即历史的 commit 记录）。
 git status：当前修改的状态，是否修改了还没提交，或者那些文件未使用。
 git reset <log>：恢复到历史版本。
+  
 ### 4.5 我的操作Git实例
 
 1、远程仓库README.git为空，把本地代码上传到远程仓库

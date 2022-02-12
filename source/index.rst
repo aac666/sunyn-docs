@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-welcom to my docs
+Welcome to ibtc-docs's documentation!
 ========================================
 
 .. toctree::
@@ -12,7 +12,6 @@ welcom to my docs
    
    baout
    早会纪要-20220209.md   
-
 Indices and tables
 ==================
 

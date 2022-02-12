@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-每周会议纪要
+welcom to my docs
 ========================================
 
 .. toctree::

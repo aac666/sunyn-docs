@@ -3,15 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ibtc-docs's documentation!
+每周会议纪要
 ========================================
 
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
-
+   
+   about
    早会纪要-20220209.md
-   Sphinx_+_Github_+_ReadTheDocs.md
+   
 Indices and tables
 ==================
 

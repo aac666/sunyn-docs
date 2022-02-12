@@ -11,7 +11,7 @@ welcom to my docs
    :caption: Contents:
 
     about
-    2022年2月/index   
+    202202/index   
 
 Indices and tables
 ==================
